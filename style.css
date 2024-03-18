@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navcontainer #navbar{
+  background-color: rgb(211, 235, 235);
+}
+#btn{
+  background-color: cadetblue;
+  color: white;
+}
+#home-container{
+  background-image: url(Images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 140vh;
+  margin-top: 60px;
+  position: relative;
+  background-attachment: fixed;
+}
+#home-container::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 140vh;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+#home-container1{
+    position: absolute;
+    z-index: 1000;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+#profile-form{
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  border: 1px solid white;
+  padding: 20px 0 40px 0; 
+}
+#profile-form form {
+    margin-bottom: 20px;
+  }
+  #profile-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  #profile-form input[type="text"], input[type="number"], select {
+    width: 70%;
+    padding: 3px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+   
+  }
+  #profile-form input[type="submit"], button {
+    padding: 10px 20px;
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  #profile-form input[type="submit"]:hover, button:hover {
+    background-color: rgb(206, 100, 118);
+  }
+  .error {
+    color: red;
+    margin-top: 5px;
+  }
+  #profile-form #box{
+    margin-left: 85px;
+    gap: 8px;
+    margin-top: -10px;
+  }
